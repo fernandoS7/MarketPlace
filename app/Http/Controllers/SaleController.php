@@ -61,7 +61,7 @@ class SaleController extends Controller
         foreach ($request->product_id as $key => $item) {
             if(trim($request->quantity[$key]) != null) {
                 ProductSale::create([
-                    'product_sale' => $request->product_id[$key],
+                    'product_id' => $request->product_id[$key],
                     'sale_id' => $sale->id,
                     'quantity' => $request->quantity[$key],
                     'price' => $request->price[$key],

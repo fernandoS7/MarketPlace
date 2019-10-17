@@ -97,7 +97,8 @@ class SaleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $sql = Sale::find($id);
+        return view('page.sale.edit', compact('sql'));
     }
 
     /**

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header">Crear producto</div>
+                    <div class="card-header">Crear venta</div>
                     <div class="card-body">
 
                         @if ($errors->any())
@@ -154,7 +154,6 @@
 
                             <button type="submit" class="btn btn-outline-primary">Guardar</button>
                             <a href="/product" class="btn btn-outline-dark">Volver</a>
-                            <a href="#" class="btn btn-outline-danger" id="btn_clone">Agregar</a>
                         </form>
                     </div>
                 </div>
